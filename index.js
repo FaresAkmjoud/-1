@@ -1,8 +1,8 @@
 const { Client, Intents, Collection } = require("discord.js");
 const token =
   "YOUR BOT TOKEN HERE!";
-const allowedChannelId = "1256407825836544101";//ايدي روم يلي هتولد فيها
-const premiumRoleId = "1256616331189420179";// ايدي رول البريميوم
+const allowedChannelId = "1309899804868083765";//ايدي روم يلي هتولد فيها
+const premiumRoleId = "1308759818068299827";// ايدي رول البريميوم
 const cooldowns = new  Collection();
 const userStats = new Collection();
 const maxNormalCount = 50; //اقصى حد توليد يمكن للمستحدم العادي استخدماه
@@ -24,7 +24,7 @@ client.on("messageCreate", async (message) => {
   if (message.content.startsWith("!توليد")) {
     if (message.channel.id !== allowedChannelId) {
       return message.reply(
-        "**تستطيع استخدام الأمر فقط في الروم المحدد! <#1256407825836544101>**",
+        "** تستطيع استخدام الأمر فقط في الروم المحدد! <#1309899804868083765>**",
       );
     }
 
@@ -41,7 +41,7 @@ client.on("messageCreate", async (message) => {
 
     if (count > maxNormalCount && !isPremium) {
       return message.reply(
-        "**ليس لديك خطة بريموم للاشتراك في خطة بريميوم يرجى فتح تكت <#1228121643398725690> وشراء الخطة لتستطيع توليد +50 نيترو!**",
+        "**ليس لديك خطة بريموم للاشتراك في خطة بريميوم يرجى فتح تكت <#1308987911974162453> وشراء الخطة لتستطيع توليد +50 نيترو!**",
       );
     }
 
@@ -108,4 +108,4 @@ function generateNitroCode() {
   return result;
 }
 
-client.login(token);
+client.login("MTMwOTg5NzIzODY1NDIyNjQ5Mw.GNYGxA.BdxDxRTbUhoYtNzmg0MBa6k2DYLt09yUeMF15Y");
