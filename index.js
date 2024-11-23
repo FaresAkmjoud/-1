@@ -1,6 +1,6 @@
 const { Client, Intents, Collection } = require("discord.js");
 const token =
-  "YOUR BOT TOKEN HERE!";
+  "MTMwOTg5NzIzODY1NDIyNjQ5Mw.G_AiHt.KAN2Yr0XMfXcZL0KL_XZZbWb9Zf5zxfCbCOIec";
 const allowedChannelId = "1309899804868083765";//ايدي روم يلي هتولد فيها
 const premiumRoleId = "1308759818068299827";// ايدي رول البريميوم
 const cooldowns = new  Collection();
@@ -108,4 +108,4 @@ function generateNitroCode() {
   return result;
 }
 
-client.login("process.env.token");
+client.login(token);
